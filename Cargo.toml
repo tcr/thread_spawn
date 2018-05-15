@@ -1,0 +1,23 @@
+[package]
+authors = ["Tim Ryan <tim@timryan.org>"]
+description = "A plugin for authoring functions that spawn threads."
+keywords = ["decorators", "spawn", "plugin", "threads"]
+license = "MIT OR Apache-2.0"
+name = "thread_spawn"
+readme = "README.md"
+repository = "https://github.com/tcr/thread_spawn"
+version = "0.1.0"
+
+[dependencies]
+quote = "0.4"
+
+[dependencies.syn]
+features = ["full", "extra-traits"]
+version = "0.12"
+
+[dev-dependencies]
+compiletest_rs = "0.3.5"
+
+[lib]
+name = "thread_spawn"
+proc-macro = true
