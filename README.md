@@ -27,6 +27,13 @@ fn main() {
 }
 ```
 
+Upsides:
+
+* Automatically names the thread after the spawning function so you have improved error messages.
+  * **Help wanted:** Make the syntax `#[thread_spawn(name("thread {}", arg_or_expression)] work
+* Mirrors the `async` keyword, conceptually.
+* Fewer keystrokes!
+
 ## License
 
 MIT or Apache-2.0, at your option.

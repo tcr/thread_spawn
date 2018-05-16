@@ -6,7 +6,7 @@ license = "MIT OR Apache-2.0"
 name = "thread_spawn"
 readme = "README.md"
 repository = "https://github.com/tcr/thread_spawn"
-version = "0.1.0"
+version = "0.2.0"
 
 [dependencies]
 quote = "0.4"

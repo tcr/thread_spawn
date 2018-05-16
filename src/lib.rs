@@ -43,10 +43,10 @@ pub fn thread_spawn(_args: TokenStream, input: TokenStream) -> TokenStream {
     let abi = &input.abi;
     let output = match input.decl.output {
         syn::ReturnType::Default => {
-            panic!("expected return type");
+            Box::new(syn::parse_str("()").unwrap())
         }
         syn::ReturnType::Type(_, ref ret) => {
-            ret
+            ret.to_owned()
         }
     };
     let body = &input.block;
